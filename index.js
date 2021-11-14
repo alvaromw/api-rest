@@ -2,16 +2,13 @@ const express = require("express");
 
 const app = express();
 
-let usuario = {
-    nombre: 'Alvaro',
-    edad: 18
-};
+const fs = require('fs');
+
+let json = fs.readFileSync('miembros.json');
+let miembrosjson = JSON.parse(json);
 
 app.get('/', function (req, res) {
-    respuesta = {
-        usuarios: [usuario]
-    };
-    res.send(respuesta);
+    res.send(miembrosjson);
 });
 
 app.listen(3000, () => {
