@@ -1,12 +1,1 @@
-{
-  "members": [
-    {
-      "name": "Alvaro",
-      "age": 24
-    },
-    {
-      "name": "Luis",
-      "age": 18
-    }
-  ]
-}
+[{"name":"Alvaro","age":23},{"name":"Alvaro","age":23},{"name":"Alvaro","age":23}]
